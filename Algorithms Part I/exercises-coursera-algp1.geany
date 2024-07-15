@@ -28,13 +28,14 @@ long_line_behaviour=1
 long_line_column=80
 
 [files]
-current_page=0
-FILE_NAME_0=256;Java;0;EUTF-8;0;1;0;%2Fhome%2Falic%2FProjects%2Fexercises-coursera%2FAlgorithms%20Part%20I%2F1.Percolation%2FPercolation.java;0;4
+current_page=1
+FILE_NAME_0=659;Java;0;EUTF-8;0;1;0;%2Fhome%2Falic%2FProjects%2Fexercises-coursera%2FAlgorithms%20Part%20I%2F1.Percolation%2FPercolation.java;0;4
+FILE_NAME_1=347;Java;0;EUTF-8;0;1;0;%2Fhome%2Falic%2FProjects%2Fexercises-coursera%2FAlgorithms%20Part%20I%2F1.Percolation%2FPercolationStats.java;0;4
 
 [VTE]
 last_dir=/home/alic
 
 [build-menu]
-EX_01_LB=test
-EX_01_CM=python3 "%f" >> ~/test.tmp
+EX_01_LB=
+EX_01_CM=
 EX_01_WD=
