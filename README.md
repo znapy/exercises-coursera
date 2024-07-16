@@ -74,3 +74,43 @@ Total points 3. Your answers cannot be more than 10000 characters.
 ===
 
 correct 2 of 3 questions
+
+## Week #2
+
+### Bytes counting
+
+| #    | Structure                           | bytes    |
+| ---- | ----------------------------------- | -------- |
+| 1    | Object overhead                     | 16       |
+| 2    | inner class extra overhead          | 8        |
+| 3    | reference to String                 | 8        |
+| 4    | reference to Object                 | 8        |
+| 5    | reference to Integer                | 4        |
+| 6    | reference to array                  | 8        |
+| 7    | array overhead                      | 24       |
+| 8    | Items without memory for themselves | 8 * size |
+| 9    | array padding                       | 4        |
+
+### Interview Questions: Stacks and Queues
+
+Total points 3 (1 per question). Your answer cannot be more than 10000 characters.
+
+1. Q: **Queue with two stacks.** Implement a queue with two stacks so that each queue operations takes a constant amortized number of stack operations.
+
+   *Note: these interview questions are ungraded and purely for your own enrichment. To get a hint, submit a solution.*
+
+<!--
+   A: We can use first stack for enqueue operations. When we need dequeue operation - we get item from second stack, if it is empty - move all items from first to second before.
+-->
+
+2. Q: **Stack with max.** Create a data structure that efficiently supports the stack operations  (push and pop) and also a return-the-maximum operation. Assume the  elements are real numbers so that you can compare them.
+
+<!--
+   A: We can't use extra variables for maximum and for quantities of maximum elements, because second pop operation need new scan. Also, we don't study sorted lists yet. So I have only one bad idea - every pop operation scan full stack.
+-->
+
+3. Q: **Java generics.** Explain why Java prohibits generic array creation.
+
+<!--
+   A: I guess, for arrays compiler make memory allocation before run-time and generic type haven't size for it.
+-->
