@@ -174,3 +174,52 @@ _         6   8 |         5   7 // _'1   2   3   4
 <!--
    A: Use array-based randomized queue (from 2 week practice), erase every item after enqueue.
 -->
+
+
+### Quicksort
+
+3-way partitioning with quicksort:
+
+![Screenshot from 2020-05-20 10-23-56](.assets/Screenshot%20from%202020-05-20%2010-23-56.png)
+
+![Screenshot from 2020-05-20 10-21-34](.assets/Screenshot%20from%202020-05-20%2010-21-34.png)
+
+|          | insertion sort (N2) |           |           | mergesort (N log N) |          |         | quicksort (N log N) |         |         |
+| -------- | ------------------- | --------- | --------- | ------------------- | -------- | ------- | ------------------- | ------- | ------- |
+| computer | thousand            | million   | billion   | thousand            | million  | billion | thousand            | million | billion |
+| home     | instant             | 2.8 hours | 317 years | instant             | 1 second | 18 min  | instant             | 0.6 sec | 12 min  |
+| super    | instant             | 1 second  | 1 week    | instant             | instant  | instant | instant             | instant | instant |
+
+In quick sort avarage compares ~ 1.39 N *log* N - it's 39% more than mergesort, but faster, 'cause it has less data movement.
+
+In worst case it is quadratic compares: 1/2 N^2
+
+![Screenshot from 2020-05-21 11-50-41](.assets/Screenshot%20from%202020-05-21%2011-50-41.png)
+
+"inplace" - doesn't take extra space for new array (the sort done inplace)
+
+### Interview Questions: Quicksort
+
+1. Q: **Nuts and bolts.** A disorganized carpenter has a mixed pile of *n* nuts and *n* bolts. The goal is to find the corresponding pairs of nuts and bolts.  Each nut fits exactly one bolt and each bolt fits exactly one nut. By  fitting a nut and a bolt together, the carpenter can see which one is  bigger (but the carpenter cannot compare two nuts or two bolts  directly). Design an algorithm for the problem that uses at most  proportional to n *log* ⁡n compares (probabilistically).
+   
+<!--
+   A: We have 2 arrays - nuts and bolts. Get first nut and divide bolts to 2 parts - bigger and smaller, unite them.  Repeat with take second nut. In the end we will get sorted bolts array - just compare every nut with them to get sorted 2nd array.
+-->
+
+2. Q: **Selection in two sorted arrays.** Given two sorted arrays *a[  ]* and *b[  ]*, of lengths *n1* and *n2* and an integer *0 ≤ k < n1 + n2*, design an algorithm to find a key of rank *k*. The order of growth of the worst case running time of your algorithm should be log *⁡n*, where *n = n1 + n2*.
+
+   - Version 1: n1=n2 (equal length arrays) and k=n/2 (median).
+
+   - Version 2: k=n/2 (median).
+
+   - Version 3: no restrictions.
+   
+<!--
+   A:
+-->
+
+3. Q: **Decimal dominants.** Given an array with *n* keys, design an algorithm to find all values that occur more than *n / 10* times. The expected running time of your algorithm should be linear.
+   
+<!--
+   A: 
+-->
