@@ -1,0 +1,2 @@
+==Test==
+docker run --rm -v "/home/alic/Projects/exercises-coursera/Algorithms Part I":/usr/src/classpath -v "%d":/usr/src/myapp -w /usr/src/myapp openjdk:11 java --class-path "$CLASSPATH:/usr/src/classpath/algs4.jar" Solver 
