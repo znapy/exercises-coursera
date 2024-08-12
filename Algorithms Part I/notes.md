@@ -223,3 +223,92 @@ In worst case it is quadratic compares: 1/2 N^2
 <!--
    A: 
 -->
+
+## Week #4
+
+### Interview Questions: Priority Queues
+
+1. Q: **Dynamic median.** Design a data type that supports *insert* in logarithmic time, *find-the-median* in constant time, and *remove-the-median* in logarithmic time. If the number of keys in the data type is even, find/remove the *lower median*.
+
+<!--
+   A: 
+-->
+
+2. Q:  **Randomized priority queue.** Describe how to add the methods ```sample()``` and ```delRandom()``` to our binary heap implementation. The two methods return a key that is chosen uniformly at random among the remaining keys, with the latter  method also removing that key. The ```sample()``` method should take constant time; the ```delRandom()ёёё method should take logarithmic time. Do not worry about resizing the underlying array.
+
+<!--
+   A: 
+-->
+
+3. Q: **Taxicab numbers.** A *taxicab* number is an integer that can be expressed as the sum of two cubes of positive integers in two different ways: *a^3 + b^3 = c^3 + d^3*. For example, 172917291729 is the smallest taxicab number: *9^3 + 10^3 = 1^3 + 12^3*. Design an algorithm to find all  taxicab numbers with *a*, *b*, *c*, and *d* less than *n*.
+
+- Version 1: Use time proportional to *n^2 log n* and space proportional to *n^2*.
+- Version 2: Use time proportional to *n^2 log n* and space proportional to *n*.
+
+<!--
+   A: 
+-->
+
+### Interview Questions: Elementary Symbol Tables
+
+1. Q: **Java autoboxing and equals()**. Consider  two *double* values *a* and *b* and their corresponding *Double* values *x* and *y*.
+
+	- Find values such that *(a==b)* is *true* but *x.equals(y)* is *false*.
+
+	- Find values such that *(a==b)* is *false* but *x.equals(y)* is *true*.
+
+<!--
+   A: 
+-->
+
+2. Q: **Check if a binary tree is a BST.** Given a binary tree where each *Node* contains a key, determine whether it is a binary search tree. Use extra space proportional to the height of the tree.
+
+<!--
+   A: 
+-->
+
+3. Q: **Inorder traversal with constant extra space**. Design an algorithm to perform an inorder traversal of a binary search tree using only a constant amount of extra space.
+
+<!--
+   A: 
+-->
+
+4. Q: **Web tracking.** Suppose that you are tracking *n* web sites and *m* users and you want to support the following API:
+
+	- User visits a website.
+
+	- How many times has a given user visited a given site?
+
+<!--
+   A: 
+-->
+
+## Week #5
+
+### Interview Questions: Balanced Search Trees
+
+1. Q: **Red–black BST with no extra memory.** Describe how to save the memory for storing the color information when implementing a red–black BST. 
+
+<!--
+   A: We need just one bit per node for save the color of parent link
+-->
+
+2. Q: **Document search.** Design an algorithm that takes a sequence of *n* document words and a sequence of *m* query words and find the shortest interval in which the *m* query words appear in the document in the order given. The length of an interval is the number of words in that interval.
+
+<!--
+   A: 
+-->
+
+3. Q: **Generalized queue**. Design a generalized queue data type that supports all of the following operations in logarithmic time (or better) in the worst case.
+
+   - Create an empty data structure.
+   - Append an item to the end of the queue.
+   - Remove an item from the front of the queue.
+   - Return the ith item in the queue.
+   - Remove the ith item from the queue.
+
+<!--
+   A: 
+-->
+
+
