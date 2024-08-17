@@ -312,3 +312,22 @@ In worst case it is quadratic compares: 1/2 N^2
 -->
 
 
+## Week #6
+
+### Interview Questions: Hash Tables
+
+1. Q: **4-SUM.** Given an array *a[  ]* of *n* integers, the 4-SUM problem is to determine if there exist distinct indices *i, j, k*, and *l* such that *a[i]+a[j]=a[k]+a[l]* Design an algorithm for the 4-SUM problem that takes time proportional to *n^2* (under suitable technical assumptions).
+
+<!--
+   A: Construct a hash-table (HT) for every pair of integers - it takes proportional (n^2)/2 time and consist n/2 elements. Go throw HT 1 time and try to found there another elements with the same sum.
+-->
+
+2. Q: **Hashing with wrong hashCode() or equals()**. Suppose that you implement a data type *OlympicAthlete* for use in a *java.util.HashMap*.
+
+    - Describe what happens if you override *hashCode()* but not *equals()*.
+    - Describe what happens if you override *equals()* but not *hashCode()*.
+    - Describe what happens if you override *hashCode()* but implement *public boolean equals(OlympicAthlete that)* instead of *public boolean equals(Object that)*.
+
+<!--
+   A: 
+-->
